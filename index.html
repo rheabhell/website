@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UV-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top 
+                    }, 800, function(){
+                        window.location.hash = hash;
+                 });
+                }
+             });
+            });
+    </script>
+
+</head>
+<body>
+
+    <div class="banner" id="home">
+
+        <div class="navbar">
+            <div class="logo"> FOODS WEBSITE </div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#news"> NEWS </a></li>
+                <li><a href="#about"> ABOUT US </a></li>
+                <li><a href="#"> GALLERY </a></li>
+                <li><a href="#"> TESTIMONY </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> WELCOME TO PFIFER FOODSTORE </h1>
+            <p> For more videos please subscribe to our channel. </p>
+
+            <div class="button">
+                <button type="button"><span></span> READ MORE </button>
+                <button type="button"><span></span> WATCH MORE </button>
+    
+            </div>
+            
+        </div>
+
+        
+
+
+    </div>
+
+        <!--this ends of home page-->
+
+    <div class="blog-section" id="news">
+        
+        <div class="section-content">
+            
+            <div class="title">
+                <h2> PFIFER FOODSTORE </h2>
+                <p>Events handled and Participated by our faculty </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="image-section">
+                    <img src="img/rr.jpg">
+                
+            </div>
+            
+            <div class="article">
+                <h4> Different Apetite Food </h4>
+                <p> Appetite food is the desire to eat food items, usually due to hunger. 
+                    Appealing foods can stimulate appetite even when hunger is absent, although appetite can be greatly reduced by satiety. </br></br>
+
+                    Appetite exists in all higher life-forms, and serves to regulate adequate energy intake to maintain metabolic needs. 
+                    It is regulated by a close interplay between the digestive tract, adipose tissue and the brain. </p>
+                </div>
+                
+                <div class="blog-view">
+                    <a href="" class="button"> Read More </a>
+                </div>
+                
+                <div class="posted-date">
+                    <p>Date Posted: July 15, 2023</p>
+                </div>
+            </div>
+
+        <div class="card">
+
+            <div class="image-section">
+            <img src="img/yy.jpg">
+            </div>      
+            
+            <div class="article">
+                <h4> Different Dessert  </h4>
+                <p> Dessert is a course that concludes a meal. The course consists of sweet foods, such as candy, 
+                    and possibly a beverage such as dessert wine and liqueur. </br></br>
+                   
+                    Dessert consist of variations of tastes, textures, and appearances. 
+                    Desserts can be defined as a usually sweeter course that concludes a meal. 
+                    This definition includes a range of courses ranging from fruits or dried nuts to multi-ingredient cakes and pies.</p>
+                </div>
+                
+                
+                <div class="blog-view">
+                    <a href="" class="button"> Read More </a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted: July 15, 2023</p>
+                </div>            
+            </div>
+            
+            <div class="card">
+                
+                <div class="image-section">
+                    <img src="img/wq.jpg">
+                </div>
+            
+                <div class="article">
+                    <h4>Different Fruits </h4>
+                    <p> Fruit is the sweet, fleshy, edible part of a plant. It generally contains seeds. 
+                        Fruits are usually eaten raw, although some varieties can be cooked. 
+                        They come in a wide variety of colours, shapes and flavours.  </br></br>
+                        
+                        A fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. 
+                        Fruits are usually produced by plants after pollination and fertilization. 
+                        In common language, however, fruit usually refers to the seed-associated
+                         fleshy structures of plants that are sweet or sour and edible in the raw state.</p>
+                    </div>
+                    
+                    <div class="blog-view">
+                        <a href="" class="button"> Read More </a>
+                    </div>
+
+                    <div class="posted-date">
+                        <p>Date Posted: July 15, 2023</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--this ends the news page-->
+
+    <div class="about-section" id="about">
+
+        <div class="heading">
+            <h1> About US </h1>
+            <p> This page Contains Foods History </p>
+        </div>
+
+       <div class="container">
+        <section class="about">
+                <div class="about-image">
+                    <img src="img/foodslogo.png">
+                </div>
+
+                <div class="about-content">
+                    <h2> FOODS HISTORY </h2>
+                    <p> Food history is an interdisciplinary field that examines the history and the cultural, 
+                        economic, environmental, and sociological impacts of food and human nutrition. 
+                        It is considered distinct from the more traditional field of culinary history, 
+                        which focuses on the origin and recreation of specific recipes.</p>
+
+                        <a href="#" class="read-more"> Read More</a>
+                </div>
+
+        </section>
+       </div>
+
+    </div>
+
+
+    
+</body>
+</html>
